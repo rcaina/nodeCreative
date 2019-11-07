@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vue REST</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <header><h1>Dog Breeds!</h1></header>
+</head>
+
+<body>
+  <div id="app">
+
+  
+  <br>
+  <br>
+
+    <h2>Type your favorite dog breed!</h2>
+    <form v-on:submit.prevent="owlREST">
+      <input type="text" v-model="dogform">
+      <br>
+      <br>
+      <input type="submit" value="submit">
+      
+    </form>
+<br>
+      <br>
+
+        <img class='avatar' v-bind:src="avatarUrl" />
+
+<br>
+      <br>
+      <h3>*click submit again to see a different*</h3>
+    
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="javascripts/script.js"></script>
+</body>
+<br>
+      <br>
+      <br>
+      <br>
+<footer>
+  <div id="footer">
+  <p class="txt">Posted by: Renzo Caina<br>Class: CS 260<br>Section: 001<br>
+  Github URL: <a href="https://github.com/BYUCS260/lab-4-node-rcaina">
+  https://github.com/BYUCS260/nodeCreative</a>.</p>
+  </div>
+</footer>
+<footer class="page-footer font-small blue">
+
+</html>
